@@ -12,6 +12,10 @@ A simple full-stack task management application built with:
 - Change task status
 - Set due dates
 
+## Demo
+Open the app in your browser at http://localhost:8080 to manage tasks.
+You can also inspect the database through the H2 console at http://localhost:8080/h2-console.
+
 ## Run locally
 1. Open the backend folder
 2. Run:
