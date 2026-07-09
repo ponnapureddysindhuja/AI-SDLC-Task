@@ -77,3 +77,6 @@ For POST and PUT requests, set:
 
 ## Persistence behavior
 Task data is now stored in a local H2 file database. Data will persist across app restarts as long as the `backend/data` folder remains available.
+
+## Git notes
+The runtime H2 database files are stored under `backend/data`. Do not commit these files to Git; they are environment-specific and should remain local.
