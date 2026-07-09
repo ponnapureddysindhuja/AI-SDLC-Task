@@ -71,6 +71,9 @@ For POST and PUT requests, set:
 
 ## H2 Console
 - URL: http://localhost:8080/h2-console
-- JDBC URL: jdbc:h2:mem:taskdb
+- JDBC URL: jdbc:h2:file:./data/taskdb
 - Username: sa
 - Password: blank
+
+## Persistence behavior
+Task data is now stored in a local H2 file database. Data will persist across app restarts as long as the `backend/data` folder remains available.
