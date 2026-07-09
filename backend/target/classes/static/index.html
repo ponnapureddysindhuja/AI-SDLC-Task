@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Task Manager</h1>
+      <p>Manage your daily work with a simple task board.</p>
+    </header>
+
+    <main class="content-grid">
+      <section class="card">
+        <h2 id="formTitle">Add New Task</h2>
+        <form id="taskForm" class="task-form">
+          <input id="title" name="title" type="text" maxlength="100" placeholder="Task title" required />
+          <textarea id="description" name="description" maxlength="500" placeholder="Description"></textarea>
+          <select id="status" name="status">
+            <option value="TODO">TODO</option>
+            <option value="IN_PROGRESS">IN PROGRESS</option>
+            <option value="DONE">DONE</option>
+          </select>
+          <input id="dueDate" name="dueDate" type="date" />
+          <button type="submit">Save Task</button>
+        </form>
+        <p id="message" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Tasks</h2>
+        <div id="taskList" class="task-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
